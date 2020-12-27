@@ -4,8 +4,8 @@ $(document).ready(function() {
     //default values
     $("#formRate").val("1.1");
     $("#formAssurRate").val("0.3");
-    $("#formApport").val("20000");
-    $("#formDuration").val("15");
+    $("#formApport").val("100000");
+    $("#formDuration").val("20");
 
     const allRanges = document.querySelectorAll(".range-wrap");
     allRanges.forEach(wrap => {

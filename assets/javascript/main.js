@@ -4,9 +4,6 @@ $(document).ready(function() {
     //default values
     $("#formRate").val("1.1");
     $("#formAssurRate").val("0.3");
-    $("#formAssurVoitures").val("120");
-    $("#formVoitures").val("60000");
-    $("#formRachat").val("460000");
     $("#formApport").val("20000");
     $("#formDuration").val("15");
 
@@ -37,10 +34,6 @@ $(document).ready(function() {
     function compute() {
             let rate = parseFloat($("#formRate").val());
             let assurRate = parseFloat($("#formAssurRate").val());
-            let vente = parseFloat($("#formVente").val());
-            let rachat = parseFloat($("#formRachat").val());
-            let voitures = parseFloat($("#formVoitures").val());
-            let assurVoitures = parseFloat($("#formAssurVoitures").val());
             let achat = parseFloat($("#formAchat").val());
             let apport = parseFloat($("#formApport").val());
             let duration = parseFloat($("#formDuration").val());
@@ -48,9 +41,9 @@ $(document).ready(function() {
             //frais de notaires : ~7% + 5000 caution et dossier
             let achatNet = achat * 1.07 + 5000;
 
-            let montantEmprunt = achatNet - (vente - rachat) + voitures - apport;
+            let montantEmprunt = achatNet - apport;
 
-            let apportTotal = apport + vente - rachat - voitures;
+            let apportTotal = apport;
         
             let t = rate/100;
 
@@ -71,13 +64,7 @@ $(document).ready(function() {
         
             $("#apporttotal").text(apportTotal.toFixed(0));
 
-            if(mensualite+mensualiteAssur+assurVoitures > 2400) {
-                $("#trTotal").removeClass("bg-success").addClass("bg-danger text-white ");
-            } else {
-                $("#trTotal").addClass("bg-success").removeClass("bg-danger text-white ");
-            }
-
-            $("#total").text((mensualite+mensualiteAssur+assurVoitures).toFixed(0));
+            $("#total").text((mensualite+mensualiteAssur).toFixed(0));
 
     }
 

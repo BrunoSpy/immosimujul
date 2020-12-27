@@ -26,30 +26,6 @@ title: Simulateur capacité emprunt / mensualité
 </div>
 
 <div class="form-group range-wrap">
-<label for="formVente">Montant vente</label>
-<input type="range" class="form-control-range" id="formVente" min="750000" max="900000" step="5000">
-<output class="bubble"></output>
-</div>
-
-<div class="form-group range-wrap">
-<label for="formRachat">Montant rachat prêt</label>
-<input type="range" class="form-control-range" id="formRachat" min="370000" max="470000" step="5000">
-<output class="bubble"></output>
-</div>
-
-<div class="form-group range-wrap">
-<label for="formVoitures">Montant achat voitures</label>
-<input type="range" class="form-control-range" id="formVoitures" min="50000" max="100000" step="1000">
-<output class="bubble"></output>
-</div>
-
-<div class="form-group range-wrap">
-<label for="formAssurVoitures">Mensualité assurances voitures</label>
-<input type="range" class="form-control-range" id="formAssurVoitures" min="50" max="200" step="10">
-<output class="bubble"></output>
-</div>
-
-<div class="form-group range-wrap">
 <label for="formAchat">Montant achat (sans frais de notaire)</label>
 <input type="range" class="form-control-range" id="formAchat" min="400000" max="650000" step="5000">
 <output class="bubble"></output>
@@ -57,7 +33,7 @@ title: Simulateur capacité emprunt / mensualité
 
 <div class="form-group range-wrap">
 <label for="formApport">Apport</label>
-<input type="range" class="form-control-range" id="formApport" min="0" max="100000" step="5000">
+<input type="range" class="form-control-range" id="formApport" min="0" max="200000" step="5000">
 <output class="bubble"></output>
 </div>
 

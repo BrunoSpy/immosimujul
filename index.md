@@ -27,7 +27,7 @@ title: Simulateur capacité emprunt / mensualité
 
 <div class="form-group range-wrap">
 <label for="formAchat">Montant achat (sans frais de notaire)</label>
-<input type="range" class="form-control-range" id="formAchat" min="300000" max="500000" step="5000">
+<input type="range" class="form-control-range" id="formAchat" min="300000" max="600000" step="5000">
 <output class="bubble"></output>
 </div>
 
